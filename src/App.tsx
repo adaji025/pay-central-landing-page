@@ -1,6 +1,7 @@
 import "@mantine/core/styles.css";
 import { MantineProvider } from "@mantine/core";
 import Header from "./components/Header";
+import Navbar from "./components/business/Navbar/Navbar";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
     >
       <div className="">
         <Header />
+        <Navbar />
       </div>
     </MantineProvider>
   );
