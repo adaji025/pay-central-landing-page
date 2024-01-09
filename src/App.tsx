@@ -1,5 +1,6 @@
 import "@mantine/core/styles.css";
 import { MantineProvider } from "@mantine/core";
+import Header from "./components/Header";
 
 export default function App() {
   return (
@@ -10,7 +11,9 @@ export default function App() {
         defaultRadius: 8,
       }}
     >
-      <div className="text-5xl underline">App</div>
+      <div className="">
+        <Header />
+      </div>
     </MantineProvider>
   );
 }
