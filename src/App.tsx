@@ -3,6 +3,7 @@ import { MantineProvider } from "@mantine/core";
 import Header from "./components/Header";
 import Navbar from "./components/business/Navbar/Navbar";
 import Banner from "./components/Banner";
+import Growth from "./components/business/Growth";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Header />
         <Navbar />
         <Banner />
+        <Growth />
       </div>
     </MantineProvider>
   );

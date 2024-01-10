@@ -11,8 +11,6 @@ label {
   margin-bottom: 2px;
 }
 
-
-
 @media (min-width: 1300px) {
   .banner {
     background: url(./assets//images/hero-bg.png);
@@ -20,6 +18,14 @@ label {
     background-position: center;
     background-size: contain;
   }
+}
+
+.growth {
+  background: url(./assets/images/growth-bg.png),
+    linear-gradient(to right, #e35669, #e18958);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 table {
