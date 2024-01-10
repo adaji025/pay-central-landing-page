@@ -35,7 +35,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="z-[999]  w-full fixed top-[60px] bg-white">
+    <div className="z-[999]  w-full fixed top-[56px] bg-white">
       <nav className={`px-5 lg:px-12 max-w-[1440px] ${styles.navbarItems}`}>
         <div className="flex gap-2">
           <div

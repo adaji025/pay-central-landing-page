@@ -28,6 +28,13 @@ label {
   background-size: cover;
 }
 
+.texture-bg {
+  background: url(./assets/images/texture-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 table {
   border-radius: 15px !important;
   color: #475467;
