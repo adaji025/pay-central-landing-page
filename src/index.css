@@ -30,6 +30,7 @@ label {
 
 .texture-bg {
   background: url(./assets/images/texture-bg.png);
+  background-color: rgba(255, 255, 255, 0.6);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

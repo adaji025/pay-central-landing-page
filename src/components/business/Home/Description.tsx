@@ -75,7 +75,7 @@ export const Verified = ({ desc, img, title, title2 }: IProps) => {
       <img src={img} alt="" className="absolute right-10 top-0 w-[150px]" />
       <div className="pt-32 px-5">
         <h3 className="text-sm text-primary">{title}</h3>
-        <h2 className="mt-3 text-2xl font-semibold text-[#746D6D]">{title2}</h2>
+        <h2 className="mt-3 text-2xl font-semibold text-[#403A3A]">{title2}</h2>
         <div className="mt-3 max-w-[400px] text-secondary">{desc}</div>
       </div>
     </div>
