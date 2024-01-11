@@ -5,6 +5,7 @@ import Navbar from "./components/business/Navbar/Navbar";
 import Banner from "./components/Banner";
 import Growth from "./components/business/Home/Growth";
 import Description from "./components/business/Home/Description";
+import Beneficiary from "./components/business/Home/Beneficiary";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Banner />
         <Growth />
         <Description />
+        <Beneficiary />
       </div>
     </MantineProvider>
   );
