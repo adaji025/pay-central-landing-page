@@ -6,6 +6,8 @@ import Banner from "./components/Banner";
 import Growth from "./components/business/Home/Growth";
 import Description from "./components/business/Home/Description";
 import Beneficiary from "./components/business/Home/Beneficiary";
+import Waitlist from "./components/business/Home/Waitlist";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -23,6 +25,8 @@ export default function App() {
         <Growth />
         <Description />
         <Beneficiary />
+        <Waitlist />
+        <Footer />
       </div>
     </MantineProvider>
   );
