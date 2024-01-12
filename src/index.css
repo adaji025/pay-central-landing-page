@@ -27,9 +27,22 @@ label {
   background-position: center;
   background-size: cover;
 }
+.growth {
+  background: url(./assets/images/growth-bg.png),
+  #342D2E;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .texture-bg {
   background: url(./assets/images/texture-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.flower-bg {
+  background: url(./assets/images/flower.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

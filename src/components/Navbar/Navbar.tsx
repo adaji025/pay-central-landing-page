@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { IoArrowForward } from "react-icons/io5";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import Logo from "../../../assets/svgs/logo.svg";
+import { AiOutlineClose } from "react-icons/ai";
+import { TbMenuDeep } from "react-icons/tb";
+import Logo from "../../assets/svgs/logo.svg";
+import ApiDropdown from "./ApiDropdown";
 import styles from "./Navbar.module.css";
-import ApiDropdown from "../ApiDropdown";
 
 const navMenuItems = [
   {
@@ -37,19 +38,17 @@ const Navbar = () => {
   return (
     <div className="z-[999]  w-full fixed top-[56px] bg-white">
       <nav className={`px-5 lg:px-12 max-w-[1440px] ${styles.navbarItems}`}>
-        <div className="flex gap-2">
-          <div
-            className={`cursor-pointer lg:hidden`}
-            onClick={() => setMenu(!menu)}
-          >
-            {menu ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
-          </div>
-          <img
-            src={Logo}
-            alt="efiko learning"
-            className="cursor-pointer w-[100px] sm:w-[unset]"
-            onClick={() => navigate("/")}
-          />
+        <img
+          src={Logo}
+          alt="efiko learning"
+          className="cursor-pointer w-[100px] sm:w-[unset]"
+          onClick={() => navigate("/")}
+        />
+        <div
+          className={`cursor-pointer lg:hidden`}
+          onClick={() => setMenu(!menu)}
+        >
+          {menu ? <AiOutlineClose size={24} /> : <TbMenuDeep size={24} />}
         </div>
 
         <div
@@ -77,8 +76,8 @@ const Navbar = () => {
           ))}
         </div>
 
-        <button className="py-2 px-5 border flex justify-center items-center">
-          <span>Login</span>
+        <button className="py-2 px-5 border max-w-[180px] w-full text-sm hidden lg:flex justify-center items-center">
+          <span>Join the waitlist</span>
           <IoArrowForward />
         </button>
       </nav>

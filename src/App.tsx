@@ -1,12 +1,16 @@
-import "@mantine/core/styles.css";
+import { useState } from "react";
 import { MantineProvider } from "@mantine/core";
-import Header from "./components/Header";
-import Navbar from "./components/business/Navbar/Navbar";
-import Banner from "./components/Banner";
-import Growth from "./components/business/Home/Growth";
-import Description from "./components/business/Home/Description";
+import { Route, Routes } from "react-router-dom";
+import WorkBusiness from "./components/WorkBusiness";
+import PaymentProvider from "./pages/PaymentProvider";
+import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/_shared/Header";
+import Footer from "./components/_shared/Footer";
+import Waitlist from "./components/_shared/Waitlist";
 
 export default function App() {
+  const [pageType, setPageType] = useState<"business" | "Payment_providers">("business");
+
   return (
     <MantineProvider
       theme={{
@@ -16,11 +20,16 @@ export default function App() {
       }}
     >
       <div className="">
-        <Header />
-        <Navbar />
-        <Banner />
-        <Growth />
-        <Description />
+        <Header pageType={pageType} setPageType={setPageType} />
+      <Navbar />
+        <Routes>
+          <Route
+            path="/*"
+            element={pageType === "Payment_providers" ? <PaymentProvider /> : <WorkBusiness />}
+          />
+        </Routes>
+        <Waitlist />
+        <Footer />
       </div>
     </MantineProvider>
   );
