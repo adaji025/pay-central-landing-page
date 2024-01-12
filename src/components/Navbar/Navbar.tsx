@@ -3,8 +3,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { IoArrowForward } from "react-icons/io5";
 import { AiOutlineClose } from "react-icons/ai";
 import { TbMenuDeep } from "react-icons/tb";
-import Logo from "../../../assets/svgs/logo.svg";
-import ApiDropdown from "../ApiDropdown";
+import Logo from "../../assets/svgs/logo.svg";
+import ApiDropdown from "./ApiDropdown";
 import styles from "./Navbar.module.css";
 
 const navMenuItems = [

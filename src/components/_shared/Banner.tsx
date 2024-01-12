@@ -1,8 +1,8 @@
 import { FaArrowRight } from "react-icons/fa";
-import Peach from "../assets/images/peach.png"
-import SImage from "../assets/images/s.png"
-import MImage from "../assets/images/m.png"
-import Bumba from "../assets/images/bumba.png"
+import Peach from "../../assets/images/peach.png"
+import SImage from "../../assets/images/s.png"
+import MImage from "../../assets/images/m.png"
+import Bumba from "../../assets/images/bumba.png"
 const Banner = () => {
   return (
     <div className="max-w-[1440] mx-auto px-5 lg:px-10 relative">

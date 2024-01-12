@@ -1,5 +1,5 @@
 import posthog from "posthog-js";
-import CookiesLogo from "../assets/svgs/CookiesLogo.svg";
+import CookiesLogo from "../../assets/svgs/CookiesLogo.svg";
 import { useState } from "react";
 
 export const Cookies = () => {
