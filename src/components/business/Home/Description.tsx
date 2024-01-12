@@ -88,20 +88,22 @@ export const Verified = ({ desc, img, title, title2 }: IProps) => {
 
 export const MagicTool = () => {
   return (
-    <div className="relative texture-bg min-h-[320px] lg:min-h-[400px] xl:min-h-[320px] w-full px-5 py-5 flex justify-between gap-10">
-      <div className="flex flex-col justify-end">
-        <h3 className="text-sm text-primary">Verified Providers</h3>
+    <div className="relative texture-bg min-h-[320px] lg:min-h-[400px] xl:min-h-[320px] w-full px-5 py-5 flex flex-col sm:flex-row justify-between gap-10">
+      <div className="flex flex-col justify-end order-2 sm:order-1">
+        <h3 className="text-sm text-primary">your magic tool</h3>
         <h2 className="mt-3 text-2xl font-semibold text-secondary">
           Global Payment Confidence
         </h2>
         <div className="mt-3 max-w-[400px] text-[#746D6D]">
-          Choose PayCentral for Verified Payment Providers. Our carefully vetted
-          network ensures that you partner with trusted and reliable payment
-          providers, offering you peace of mind with every transaction.
+          Enjoy the convenience of a centralized hub that brings the best global
+          payment solutions to your fingertips, simplifying international
+          financial transactions.
         </div>
       </div>
-      <div>
-        <img src={GroupOtionImage} alt="" />
+      <div className="order-1 sm:order-2 flex justify-end">
+        <div>
+          <img src={GroupOtionImage} alt="" />
+        </div>
       </div>
     </div>
   );
@@ -111,17 +113,18 @@ export const IndustrySpecific = () => {
   return (
     <div className="relative texture-bg min-h-[320px] lg:min-h-[400px] xl:min-h-[320px] w-full px-5 py-5 flex items-center justify-between gap-10">
       <div className="flex flex-col">
-        <h3 className="text-sm text-primary">Verified Providers</h3>
+        <h3 className="text-sm text-primary">Industry specific</h3>
         <h2 className="mt-3 text-2xl font-semibold text-secondary">
-          Global Payment Confidence
+          Get Payemnt Providers Tailored To Your Industry
         </h2>
         <div className="mt-3 max-w-[400px] text-[#746D6D]">
-          Choose PayCentral for Verified Payment Providers. Our carefully vetted
-          network ensures that you partner with trusted and reliable payment
-          providers, offering you peace of mind with every transaction.
+          Experience personalized service with PayCentral's intelligent matching
+          system. Based on your industry, preferences, and business needs, we
+          connect you to the right payment provider, ensuring a customized and
+          optimized financial solution.
         </div>
       </div>
-      <img src={IndustryImage} alt="" className="absolute right-0 bottom-0" />
+      <img src={IndustryImage} alt="" className="absolute right-0 bottom-0 w-[100px] z-[-1] sm:w-[unset]" />
     </div>
   );
 };

@@ -6,8 +6,8 @@ import Bumba from "../assets/images/bumba.png"
 const Banner = () => {
   return (
     <div className="max-w-[1440] mx-auto px-5 lg:px-10 relative">
-      <div className="banner h-[calc(100vh-140px)] mt-16 flex flex-col justify-center text-center">
-        <h2 className="text-[32px] md:text-[48px] max-w-[800px] mx-auto font-bold">
+      <div className="banner min-h-[40vh] md:min-h-[calc(100vh-140px)] mt-16 flex flex-col justify-center text-center">
+        <h2 className="text-[24px] sm:text-[32px] md:text-[48px] max-w-[800px] mx-auto font-bold">
           Find the Perfect Payment Partner For Your Business!
         </h2>
         <h5 className="max-w-[650px] mx-auto md:text-xl">
@@ -25,10 +25,10 @@ const Banner = () => {
           </button>
               </div>
               
-              <img src={Peach} alt="" className="absolute left-10 bottom-20 w-[10px] sm:w-[50px] xl:hidden" />
-              <img src={MImage} alt="" className="absolute left-10 top-5 w-[10px] sm:w-[50px] xl:hidden" />
-              <img src={Bumba} alt="" className="absolute right-10 top-5 w-[10px] sm:w-[50px] xl:hidden" />
-              <img src={SImage} alt="" className="absolute right-10 bottom-20 w-[10px] sm:w-[50px] xl:hidden" />
+              <img src={Peach} alt="" className="absolute left-10 bottom-20 hidden md:inline w-[50px] xl:hidden" />
+              <img src={MImage} alt="" className="absolute left-10 top-5 hidden md:inline w-[50px] xl:hidden" />
+              <img src={Bumba} alt="" className="absolute right-10 top-5 hidden md:inline w-[50px] xl:hidden" />
+              <img src={SImage} alt="" className="absolute right-10 bottom-20 hidden md:inline w-[50px] xl:hidden" />
       </div>
     </div>
   );
