@@ -9,6 +9,7 @@ import Beneficiary from "./components/business/Home/Beneficiary";
 import Waitlist from "./components/business/Home/Waitlist";
 import Footer from "./components/Footer";
 
+
 export default function App() {
   return (
     <MantineProvider

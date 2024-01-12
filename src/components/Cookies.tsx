@@ -1,30 +1,22 @@
-import { useEffect, useState } from "react";
 import posthog from "posthog-js";
-import CookiesLogo from "../assets/svgs/CookiesLogo.svg"
+import CookiesLogo from "../assets/svgs/CookiesLogo.svg";
+import { useState } from "react";
 
 export const Cookies = () => {
-  const [showCookie, setShowCookie] = useState(false);
-
+  const [showBanner, setShowBanner] = useState(true); // new
   const acceptCookie = () => {
-    setShowCookie(false);
-    posthog.opt_in_capturing();
+      posthog.opt_in_capturing();
+      setShowBanner(false); // new
   };
 
   const declineCookie = () => {
-    setShowCookie(false);
-    posthog.opt_out_capturing();
+      posthog.opt_out_capturing();
+      setShowBanner(false); // new
   };
-  useEffect(() => {
-    if (
-      !(posthog.has_opted_in_capturing() || posthog.has_opted_out_capturing())
-    ) {
-      setShowCookie(true);
-    }
-  }, []);
 
   return (
-    <>
-      {showCookie && (
+    <div>
+      {showBanner && (
         <div className="fixed bottom-0 px-[1rem] lg:px-[80px] py-[40px] bg-[#332C2D] block lg:flex items-center justify-between w-full z-40">
           <div className="flex gap-[16px] w-full lg:w-[702px] justify-between">
             <div className="w-[40px]">
@@ -57,6 +49,6 @@ export const Cookies = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
