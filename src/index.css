@@ -34,6 +34,12 @@ label {
   background-position: center;
   background-size: cover;
 }
+.flower-bg {
+  background: url(./assets/images/flower.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 table {
   border-radius: 15px !important;
