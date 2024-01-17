@@ -12,7 +12,7 @@ const Banner = ({ desc, title }: IProps) => {
   return (
     <div className="max-w-[1440] mx-auto px-5 lg:px-10 relative">
       <div className="banner min-h-[40vh] md:min-h-[calc(100vh-140px)] mt-16 flex flex-col justify-center text-center">
-        <h2 className="text-[24px] sm:text-[32px] md:text-[48px] max-w-[800px] mx-auto font-bold">
+        <h2 className="text-[24px] sm:text-[32px] md:text-[48px] max-w-[800px] mx-auto font-bold text-[#342D2E]">
           {title}
         </h2>
         <h5 className="max-w-[650px] mx-auto md:text-xl">{desc}</h5>
