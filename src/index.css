@@ -82,44 +82,30 @@ thead {
 }
 
 .work-bg {
-  background: #e35467 url(./assets/images/texture-bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #e35467 url(./assets/images/texture-bg.png) center no-repeat;
   background-size: cover;
 }
 
 .locationPin {
-  background-image: url(./assets/images/locationPin.png);
-  background-position-x: 0;
-  background-repeat: no-repeat;
+  background: url(./assets/images/locationPin.png) no-repeat;
 }
 
 .megaphone {
-  background-image: url(./assets/images/Megaphone.png);
+  background: url(./assets/images/Megaphone.png) 50px 70px no-repeat;
   background-size: 240px;
-  background-position: 50px 70px;
-  background-repeat: no-repeat;
 }
 
 .puzzle {
-  background-image: url('https://s3-alpha-sig.figma.com/img/5f02/8540/fb8220f0280649c3fc7b43eb79aaf529?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Fd4tPrABs2qdNzrQiP2iE1n9E1oDkgpgcXeajoGm7C7vyF~Bf1CjsKkjzukcFm2iA6RMQv-oTZivmhFoe8O3f47igDfWbQLgr96mJpgPuw6Pj1Isn0X6RnpXUhepbUn~7MGmDbXaVhuBE75p2hWZ5DmaVcmrvinb-QroxP0Bslu49aCnlK-bgjno3tbZTMyuDHETooCnlWcC9bD1DoGyrBN-nwvg7dn4nDM2Icxwrs6rUfVl2GnL76uYsMcZE4MRtdvdLS~ajiesVLXMQKdiF7KuXlR~F4jy~IEIiNX5k66m4agXdAu7vAfkJVO1M3tyyh3WFzLL~2JJnB0Ul5Uq~w__');
-  background-position: 50px 20px;
-  background-repeat: no-repeat;
+  background: url(./assets/images/puzzle.png) 50px 20px no-repeat;
 }
 
 .tailored-matching {
-  background-image: url('https://s3-alpha-sig.figma.com/img/e372/1edb/3fb6cd7c8010e9611ae857025d47011c?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RLsF4QuIe2dKfkGkuHmgArj50lVVlv47aYKlahwJx5z4XzYMIAXlHTdC7CcRlimmf5ETQ-5H906bm01KZkks4ujabDi9b3uICA9jIOe5IpdhEFKelT2U6SHVoXhlH~f-WOfUGE5C8IiCX3H8TAy8giaGBGYIqF2Lhg2OLreduaK8Ni4vW6r7PX2WSlxlZ6BUL5WzBiQigSP7poAqGDgOd18-ti1kKGGTQQ81vRLbi5kPV~esLjIOZ9HjPMm82ayhRbAClifLGGkYljD0SGvPWvguNs3PTBomlvh4MP2Z85nICRGCljmcnVYuPSzwyTNOl3hf5zLo~MXmeyx7F2DEbQ__');
-
-  background-position: center;
+  background: url(./assets/images/thumbsUp.png) center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 .exclusiveEarly {
-  background-image: url('https://s3-alpha-sig.figma.com/img/b73f/1346/ef6607b9bca29762a2132813fd41650c?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=adiryUvQZL684m31cbrg1QNxUWV5tO6w4qSiWqXs2vCMwKA7kvbRnsTrjubvxTDHUtMRVfyvmVgzY0GrfeP95GknR5EK2LTXtOqoqTkCOosUvPVJeK2~OTBjVzcHNrAyPpXfvz2VOBUgTEMQjpCMSDuxr6wkmRa3V7MBUZZ-TOov3O~FyG45n4taNuzxkwJBrB~PvlNcjf6bgqZpOO-UXIvM0oSJskyfwBOfxWcwOHQ9gGzC7Dwb0dKV6ajEEZhLeJBr26j7CxJVNr69jlinG06g8ubKQaHBgTC1KwH7ZKsHpmA-TbaXInESBfi4fGiMMamYxF8VFntaxveujB47qQ__');
-
-  background-position: center;
+  background: url(./assets/images/packlock.png) center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 
