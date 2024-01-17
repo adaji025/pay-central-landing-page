@@ -2,7 +2,7 @@ import { Button } from "@mantine/core";
 
 const Growth = () => {
   return (
-    <div className="growth">
+    <div className="growth-2">
       <div className="min-h-[300px] max-w-[1440] text-white  mx-auto px-5 lg:px-10 flex flex-col md:flex-row py-10 gap-3 justify-center md:justify-between items-center">
         <div className="flex flex-col ">
           <div className="flex justify-center md:justify-start">
