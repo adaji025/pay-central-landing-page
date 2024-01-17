@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/_shared/Header";
 import Footer from "./components/_shared/Footer";
 import Waitlist from "./components/_shared/Waitlist";
+import { Notifications } from "@mantine/notifications";
 
 export default function App() {
   const [pageType, setPageType] = useState<"business" | "Payment_providers">("business");
@@ -19,6 +20,7 @@ export default function App() {
         defaultRadius: 8,
       }}
     >
+      <Notifications position="top-right" />
       <div className="">
         <Header pageType={pageType} setPageType={setPageType} />
       <Navbar />

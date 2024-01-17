@@ -3,13 +3,19 @@ import Peach from "../../assets/images/peach.png";
 import SImage from "../../assets/images/s.png";
 import MImage from "../../assets/images/m.png";
 import Bumba from "../../assets/images/bumba.png";
+import { useDisclosure } from "@mantine/hooks";
+import { Fragment } from "react";
+import WaitlistModal from "./WaitlistModal";
 
 type IProps = {
   title: string;
   desc: string;
 };
 const Banner = ({ desc, title }: IProps) => {
+  const [opened, {open, close}] = useDisclosure(false)
   return (
+    <Fragment>
+      <WaitlistModal opened={opened} close={close} />
     <div className="max-w-[1440] mx-auto px-5 lg:px-10 relative">
       <div className="banner min-h-[40vh] md:min-h-[calc(100vh-140px)] mt-16 flex flex-col justify-center text-center">
         <h2 className="text-[24px] sm:text-[32px] md:text-[48px] max-w-[800px] mx-auto font-bold text-[#342D2E]">
@@ -19,7 +25,7 @@ const Banner = ({ desc, title }: IProps) => {
         <div className="flex justify-center mt-5">
           <button
             className="bg-[#E35669] text-white px-4 py-2 flex gap-2 items-center"
-            //   onClick={() => setOpenWaitlist(true)}
+              onClick={open}
           >
             <div className="text-xs lg:text-base">Join the waitlist</div>
             <FaArrowRight className="hidden sm:inline" />
@@ -48,6 +54,7 @@ const Banner = ({ desc, title }: IProps) => {
         />
       </div>
     </div>
+    </Fragment>
   );
 };
 

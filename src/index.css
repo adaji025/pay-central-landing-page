@@ -121,3 +121,11 @@ thead {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+
+.mantine-LoadingOverlay-root {
+  position: fixed !important;
+  z-index: 1000 !important;
+  width: 100%;
+  height: 100%
+}
