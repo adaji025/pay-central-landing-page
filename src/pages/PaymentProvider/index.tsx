@@ -1,6 +1,8 @@
-import { Fragment } from "react";
-import Banner from "../../components/_shared/Banner";
-import Growth from "./components/Growth";
+import { Fragment } from 'react'
+import Banner from '../../components/_shared/Banner'
+import Growth from './components/Growth'
+import Works from './components/Work'
+import Offer from './components/Offer'
 
 const Home = () => {
   return (
@@ -10,8 +12,10 @@ const Home = () => {
         title="Empowering Payment Providers"
       />
       <Growth />
+      <Offer />
+      <Works />
     </Fragment>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
