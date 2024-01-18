@@ -10,7 +10,7 @@ const Growth = () => {
               Magic tool for growth
             </Button>
           </div>
-          <div className="mt-5 font-bold text-[24px] lg:text-[40px] max-w-[438px]">
+          <div className="mt-5 font-bold text-[24px] lg:text-[40px] max-w-[438px] text-center md:text-start">
             Super-Smart assistant for businesses
           </div>
         </div>
