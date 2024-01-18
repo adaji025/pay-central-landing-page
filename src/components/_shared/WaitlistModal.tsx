@@ -1,52 +1,52 @@
-import { Fragment, useState } from "react";
-import { Modal, TextInput, LoadingOverlay } from "@mantine/core";
-import { LuUser } from "react-icons/lu";
-import { FaArrowRight } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
-import { useForm } from "@mantine/form";
-import { joinWaitlist } from "../../services/waitlist";
-import { JoinWaitlistTypes } from "../../types/waitlist";
-import { showNotification } from "@mantine/notifications";
+import { Fragment, useState } from 'react'
+import { Modal, TextInput, LoadingOverlay } from '@mantine/core'
+import { LuUser } from 'react-icons/lu'
+import { FaArrowRight } from 'react-icons/fa'
+import { MdOutlineEmail } from 'react-icons/md'
+import { useForm } from '@mantine/form'
+import { joinWaitlist } from '../../services/waitlist'
+import { JoinWaitlistTypes } from '../../types/waitlist'
+import { showNotification } from '@mantine/notifications'
 
 type IProps = {
-  opened: boolean;
-  close: () => void;
-};
+  opened: boolean
+  close: () => void
+}
 
 const WaitlistModal = ({ opened, close }: IProps) => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false)
 
   const form = useForm({
     initialValues: {
-      email: "",
-      full_name: "",
+      email: '',
+      full_name: '',
     },
-  });
+  })
 
   const submit = (values: JoinWaitlistTypes) => {
-    setLoading(true);
+    setLoading(true)
 
     joinWaitlist(values)
       .then(() => {
         showNotification({
-          title: "Success",
-          message: "You have successfully joined the waitlist",
-          color: "green",
-        });
-        form.reset();
-        close();
+          title: 'Success',
+          message: 'You have successfully joined the waitlist',
+          color: 'green',
+        })
+        form.reset()
+        close()
       })
       .catch((err) => {
         showNotification({
-          title: "Error",
+          title: 'Error',
           message: err.response.data.email[0],
-          color: "red",
-        });
+          color: 'red',
+        })
       })
       .finally(() => {
-        setLoading(false);
-      });
-  };
+        setLoading(false)
+      })
+  }
   return (
     <Fragment>
       <LoadingOverlay visible={loading} />
@@ -65,10 +65,10 @@ const WaitlistModal = ({ opened, close }: IProps) => {
               size="md"
               mt={16}
               radius={2}
-              leftSection={<MdOutlineEmail />}
+              leftSection={<LuUser />}
               placeholder="Full Name"
               className="w-full"
-              {...form.getInputProps("full_name")}
+              {...form.getInputProps('full_name')}
             />
             <TextInput
               required
@@ -76,10 +76,10 @@ const WaitlistModal = ({ opened, close }: IProps) => {
               type="email"
               mt={16}
               radius={2}
-              leftSection={<LuUser />}
-              placeholder="Full Name"
+              leftSection={<MdOutlineEmail />}
+              placeholder="Email"
               className="w-full"
-              {...form.getInputProps("email")}
+              {...form.getInputProps('email')}
             />
 
             <button className="bg-[#E35669] text-white px-4 py-2 flex gap-2 items-center justify-center mt-4 w-full">
@@ -90,7 +90,7 @@ const WaitlistModal = ({ opened, close }: IProps) => {
         </div>
       </Modal>
     </Fragment>
-  );
-};
+  )
+}
 
-export default WaitlistModal;
+export default WaitlistModal
