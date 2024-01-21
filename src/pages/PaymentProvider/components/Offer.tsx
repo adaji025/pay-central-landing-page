@@ -77,7 +77,7 @@ export const Card = () => {
                 }
               />
             </div>
-            <div className="relative z-[-10]">
+            <div className="hidden lg:block relative">
               <div className="exclusiveEarly absolute top-[50%] translate-y-[-50%] right-0 w-[200px] h-[200px]"></div>
             </div>
           </div>
